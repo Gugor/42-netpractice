@@ -1,2 +1,16 @@
 # 42-netpractice
-A practice for netting and subneting
+
+We can descrive a network as a bunch of devices connected toghether. This allow them to communicate and exange information. The way to connect them is via wires (ethernet) or waves (wifi).
+
+There are some devices that help, in the transmission of information between devices, those are machines such as, hubs, switches and routers.
+
+## Hub and Switches
+
+As we have addresses in our real world to help post-services, or your delivery company sending letters or packages to you, each device has an unique identifier that distinguish it from the rest. This is what we call a Medium Access Control, or MAC Address for short. Its a 48 bits identifier separated in 6 hexadecimal blocks of 8 bits. Something like this: `00:B0:D0:63:C2:26`. This is what `hubs` and `switches` use to connect from and to other devices. They act like a communication office that send news to everyone that is registered to it. The term here is `broadcast`. The diference beteween a hub and a switch is that the hub broadcast the messages to everyone who is connected to its network with no discrimination, it doesn´t care who is listening, whereas the switch has the habiility to store the addresses of other devices and disciminate wich message has to be sended to wich device. This is not always the case but is good for now this way.
+
+## Routers
+
+Some times you need to connect networks between them, or to the biggest of the networks, the Internet. Here is where we use the router. Because, there are billions devices or more -this number grow every day-, we need middle offices to deliver our packages and letters, and here is where we differenciate between local offices, county officies or even bigger officies like state ones. If we want to deliver, our package to another country, we will go to our local post office, this office will deliver to a county office or a state offcie depending wich ones are closer and available, an then to the other country, where the contrary process will follow until reach the local destination. Here, instead of just using our street address they will also use the zipcode, beacause is a bigger identificator. Imaging we have two streets in differents cities with the same name, that's when the zipcode comes in handy to discriminate where the packages need to be delivered to. When we talk about networking the equivalent of the zipcode is the Internet Protocol Address, or IP Address for short. The most familiar code for a IP Adress is something like `192.169.1.1`. This are four block of 8 bits each, also called octets. This is the IPv4 protocol. Wich has the hability to create more than 4.000.000.000 IP Adresses. Belive it or not, this is amount of IPs has being outpassed, and that´s why a new protocol the IPv6 was invented. An IP in this protocol looks somthing like this: `2001:0000:130F:0000:0000:09C0:876A:130B`. This is 8 block of 16-bits each. We are not going to cover more on this protocol, in this repo.
+
+Now a a days for home networks we are going to call routers to devices that aglutinate together, routing, switching and wifi. They are very common and we are very used to them, but calling them router is fall for short, as you can now understand.
+
